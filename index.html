@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      background-color: #0A0C1B;
+    }
+    .box{
+      width: 1110px;
+      height: 444px;
+      background-color: #1C1938;
+      margin: 175px auto;
+      border-radius: 10px;
+      display: flex;
+      overflow: hidden;
+    }
+
+    .left{
+      width: 555px;
+      height: 444px;
+      padding-left: 73px;
+    }
+    .right{
+      width: 555px;
+      height: 444px;
+      overflow: hidden;
+      position: relative;
+      
+    }
+    .right-img{
+      position: absolute;
+      top: 0;
+      width: 555px;
+      z-index: 0;
+    }
+    .box-sh{
+      width: auto;
+      height: 444px;
+      backdrop-filter: blur(1px);
+      background: rgba(105, 34, 149, 0.485);
+      
+
+    }
+   .title{
+    margin-top: 80px;
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: 35px;
+    max-width: 380px;
+    width: 100%;
+
+   }
+.span{
+  color: #A65DD4;
+}
+
+.desc{
+  color: #A9A7C0;
+  max-width: 380px;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.stat {
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
+}
+.stat-card {
+  text-transform: uppercase ;
+  color: #FFF;
+  font-family: sans-serif;
+}
+
+.stat-desc {
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  padding-top: 17px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="box">
+<div class="left">
+<h1 class="title">Get <span class="span">insights</span> that help your business grow.</h1>
+
+<p class="desc"> Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+  experience, and overall efficiency.</p>
+
+  <div class="stat">
+    <div class="stat-card">
+      <h1 class="stat-num">10K+</h1>
+      <p class="stat-desc">companies</p>
+    </div>
+    <div class="stat-card">
+      <h1 class="stat-num">314</h1>
+      <p class="stat-desc">templates</p>
+    </div>
+    <div class="stat-card">
+      <h1 class="stat-num">12M+</h1>
+      <p class="stat-desc">queries</p>
+    </div>
+  </div>
+</div>
+<div class="right">
+  <img src="./images/image-header-desktop.jpg" alt="" class="right-img">
+  <div class="box-sh"></div>
+  
+</div>
+
+  </div>
+
+ 
+ 
+</body>
+</html>
+
+<!-- 
+   
+
+ 
+
+   
+   
+   
+
+
+   <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+ -->
